@@ -34,14 +34,14 @@ function App() {
       document.body.style.backgroundColor='#0c0027';
       document.body.style.color='white';
       showAlert('Dark mode has been enabled', 'success');
-      document.title="TextUtils - Dark Mode";
+      // document.title="TextUtils - Dark Mode";
     }else{
       setMode('dark');
       setBtnText('Enable Dark Mode')
       document.body.style.backgroundColor='white';
       document.body.style.color='black';
       showAlert('Light mode has been enabled', 'success');
-      document.title="TextUtils - Light Mode";
+      // document.title="TextUtils - Light Mode";
     }
   }
 
@@ -52,7 +52,7 @@ function App() {
     <Alert alert={alert}/>
     <div className="container mt-4">
     <Routes>
-          <Route exat path="/" element={<TextForm heading="Enter the Text to Analyze" mode={mode} alert={showAlert}/>} />
+          <Route exat path="/" element={<TextForm heading="Try TextUtils - Word & Character Counter, Remove Extra Spaces, Read & Preview Text" mode={mode} alert={showAlert}/>} />
           <Route exat path="/about" element={<About />} />
           <Route exat path="/contact" element={<Contact />} />
     </Routes>
